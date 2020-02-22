@@ -34,3 +34,10 @@ The solution for the determination a suitable driver class is to fill 'applicati
 Task for the next meeting: create the structure of database in MySql and inmplement the entities in IntelliJ.
 Deadlines: 22.02
 
+Meeting: 4
+Date:23.02
+Group leader: Olya
+
+Task and roles: As we understood how to work with spring boot our next step was to read requirement for projects and start to work. WE created database 
+and started to create project. 
+Deadline: 26.02
