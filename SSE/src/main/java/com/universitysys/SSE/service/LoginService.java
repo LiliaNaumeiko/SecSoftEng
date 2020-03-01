@@ -1,6 +1,7 @@
 package com.universitysys.SSE.service;
 
 import com.universitysys.SSE.exception.WrongPasswordOrLogin;
+import com.universitysys.SSE.model.Account;
 import com.universitysys.SSE.model.Students;
 import com.universitysys.SSE.repository.LoginRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,19 +23,24 @@ public class LoginService {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    public boolean validateStudent(String userid, String password) {
-        String sql = "select * from students where username='" +userid + "' and password='" + password
+    public void register(Account account){
+        String sql = "insert into account values(?,?, ?,?,?)";
+        jdbcTemplate.update(sql, new Object[] {account.getUsername(), account.getPassword(), 11,0,11});
+    }
+
+    public boolean validateStudent(String username, String password) {
+        String sql = "select * from account where username='" +username + "' and password='" + password
                 + "'";
-        List<Students> users = jdbcTemplate.query(sql, new UserMapper());
+        List<Account> users = jdbcTemplate.query(sql, new UserMapper());
         if (users.size() > 0 ){
             return true;
         }
         return false;
     }
 
-    class UserMapper implements RowMapper<Students> {
-        public Students  mapRow(ResultSet rs, int arg1) throws SQLException {
-            Students user = new Students();
+    class UserMapper implements RowMapper<Account> {
+        public Account  mapRow(ResultSet rs, int arg1) throws SQLException {
+            Account user = new Account();
             user.setUsername(rs.getString("username"));
             user.setPassword(rs.getString("password"));
             return user;

@@ -3,3 +3,7 @@ git status
 
 git pull <remote> <name-of-branch>//download the lates changes
 git push <remote> <name-of-branch>//save changes
+
+
+git push https://github.com/LiliaNaumeiko/SecSoftEng.git 
+
