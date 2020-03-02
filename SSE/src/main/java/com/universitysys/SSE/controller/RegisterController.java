@@ -31,7 +31,7 @@ public class RegisterController {
     }
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
-        @ModelAttribute("account") Students students) {
+        @ModelAttribute("students") Students students) {
         boolean isValidStudent = true;
         if (!isValidStudent) {
             service.registerStudent(students);

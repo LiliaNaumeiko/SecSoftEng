@@ -16,6 +16,7 @@ public class ModuleService {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+
     public List<Module> showInfo(){
         String sql1 = "select * from module";
         List<Module> users = jdbcTemplate.query(sql1,new UserMapper());

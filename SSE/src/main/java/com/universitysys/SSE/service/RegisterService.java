@@ -18,9 +18,7 @@ public class RegisterService {
     JdbcTemplate jdbcTemplate;
 
     public void registerStudent(Students students){
-        String sql1 = "select * from students";
-        List<Students> users = jdbcTemplate.query(sql1,new UserMapper());
-        String sql = "insert into account values(?,?, ?,?,?,?)";
+        String sql = "insert into students values(?,?, ?,?,?,?)";
         jdbcTemplate.update(sql, new Object[] {students.getId(),students.getName(), students.getSurname(), students.getDate_of_birth(),students.getNationality(),students.getSex()});
     }
 
