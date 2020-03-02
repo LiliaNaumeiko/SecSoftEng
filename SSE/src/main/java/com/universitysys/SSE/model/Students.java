@@ -1,13 +1,19 @@
 package com.universitysys.SSE.model;
 
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity // This tells Hibernate to make a table out of this class
-
-@Table(name = "students")
+@Configuration
+@Table(name = "student")
 public class Students {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -23,7 +29,15 @@ public class Students {
     @NotBlank
     public String sex;
 
+    public Students() {
 
+    }
+
+    public Students(Integer id, String name, String surname) {
+        this.id= id;
+        this.name = name;
+        this.surname = surname;
+    }
     public Integer getId() {
         return id;
     }

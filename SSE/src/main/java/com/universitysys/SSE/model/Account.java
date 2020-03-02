@@ -4,7 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity // This tells Hibernate to make a table out of this class
-
+@Table(name = "account")
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

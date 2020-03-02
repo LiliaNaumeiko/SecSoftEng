@@ -3,6 +3,7 @@ package com.universitysys.SSE.controller;
 import com.universitysys.SSE.model.Account;
 import com.universitysys.SSE.model.Students;
 import com.universitysys.SSE.service.LoginService;
+import com.universitysys.SSE.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -20,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 @SessionAttributes("name")
 public class RegisterController {
     @Autowired
-    public LoginService service;
+    public RegisterService service;
 
     @RequestMapping(value = "/register", method = RequestMethod.GET )
     public ModelAndView showRegister(HttpServletRequest request, HttpServletResponse response) {
@@ -30,15 +31,15 @@ public class RegisterController {
     }
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
-        @ModelAttribute("account") Account account) {
-        boolean isValidStudent = service.validateStudent(account.getUsername(), account.getPassword());
+        @ModelAttribute("account") Students students) {
+        boolean isValidStudent = true;
         if (!isValidStudent) {
-            service.register(account);
-            return new ModelAndView("welcome", "firstname", account.getUsername());
+            service.registerStudent(students);
+                    return new ModelAndView("login");
         }
 
         else {
-            return new ModelAndView("error", "firstname", account.getUsername());
+            return new ModelAndView("error", "firstname",students.getName());
 
         }
     }
