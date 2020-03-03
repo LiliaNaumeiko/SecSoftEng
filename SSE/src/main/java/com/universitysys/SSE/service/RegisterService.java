@@ -18,8 +18,11 @@ public class RegisterService {
     JdbcTemplate jdbcTemplate;
 
     public void registerStudent(Students students){
-        String sql = "insert into students values(?,?, ?,?,?,?)";
-        jdbcTemplate.update(sql, new Object[] {students.getId(),students.getName(), students.getSurname(), students.getDate_of_birth(),students.getNationality(),students.getSex()});
+        String sql1 = "SELECT * FROM student";
+        List<Students> users = jdbcTemplate.query(sql1, new  UserMapper());
+        String sql = "insert into student values(?,?,?,?,?,?)";
+        jdbcTemplate.update(sql, new Object[] {users.size()+1,students.getName(), students.getSurname(), students.getDate_of_birth(),students.getNationality(),students.getSex()});
+
     }
 
 
@@ -28,7 +31,7 @@ public class RegisterService {
             Students user = new Students();
             user.setNationality(rs.getString("nationality"));
             user.setSex(rs.getString("sex"));
-            user.setDate_of_birth(rs.getDate("date_of_birthday"));
+            user.setDate_of_birth(rs.getDate("date_of_birth"));
             user.setName(rs.getString("name"));
             user.setSurname(rs.getString("surname"));
             user.setId(rs.getInt("id"));

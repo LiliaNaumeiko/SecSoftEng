@@ -58,12 +58,12 @@ public class Students {
         return surname;
     }
 
-    public void setSurname(String email) {
+    public void setSurname(String surname) {
             this.surname = surname;
     }
     public Date getDate_of_birth() {return date_of_birth;}
 
-    public void setDate_of_birth(Date date_of_birth){this.date_of_birth = date_of_birth;}
+    public void setDate_of_birth(Date date_of_birth) {this.date_of_birth = date_of_birth;}
 
     public String getNationality(){return nationality;}
 

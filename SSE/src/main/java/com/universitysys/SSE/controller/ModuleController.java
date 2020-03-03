@@ -9,6 +9,7 @@ import com.universitysys.SSE.service.StatisticService;
 import com.universitysys.SSE.service.TopicsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import com.universitysys.SSE.exception.ModuleNotFound;
 import org.springframework.web.servlet.ModelAndView;
@@ -30,12 +31,12 @@ public class ModuleController {
 
     @RequestMapping(value = "/module" , method = RequestMethod.GET)
     @ResponseBody
-    protected Object getById(Model model){
+    protected Object getById(ModelMap model){
         List<Module> moduleList = moduleService.showInfo();
         model.addAttribute("moduleList", moduleList);
-        model.addAttribute("nameList", moduleList.toArray()[2]);
+        model.addAttribute("nameList", moduleList.toArray());
         //students.forEach((students1-> System.out.println(students.toString())));
-        return moduleList.toArray()[1];
+        return "allmodules";
     }
     @RequestMapping(value = "/professor" , method = RequestMethod.GET)
     @ResponseBody

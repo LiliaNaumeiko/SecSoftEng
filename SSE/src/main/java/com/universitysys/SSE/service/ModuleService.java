@@ -30,6 +30,8 @@ public class ModuleService {
             Module user = new Module();
             user.setName(rs.getString("name"));
             user.setCredit(rs.getString("credit"));
+            user.setEnrolled_stud(rs.getInt("enrolled_stud"));
+            user.setMaxplace(rs.getInt("maxplace"));
             return user;
         }
     }

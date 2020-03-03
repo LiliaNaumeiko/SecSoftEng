@@ -36,7 +36,7 @@ public class RegisterController {
         if (!isValidStudent) {
             service.registerStudent(students);
             loginService.registerAccount(account);
-                    return new ModelAndView("login");
+                    return new ModelAndView("register");
         }
 
         else {

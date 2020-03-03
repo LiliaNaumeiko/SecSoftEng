@@ -22,10 +22,6 @@ public class LoginService {
 
     @Autowired
     JdbcTemplate jdbcTemplate;
-    public void registerAccount(Account account){
-        String sql = "insert into account values(?,?)";
-        jdbcTemplate.update(sql, new Object[] {account.getUsername(), account.getPassword()});
-    }
 
     public boolean validateStudent(String username, String password) {
         String sql = "select * from account where BINARY username REGEXP '" + username + "' and BINARY password REGEXP '" + password
@@ -45,7 +41,12 @@ public class LoginService {
             return user;
         }
     }
-
+    public void registerAccount(Account account){
+        String sql1 = "select * from account";
+        List<Account> users = jdbcTemplate.query(sql1, new UserMapper());
+        String sql = "insert into account values(?,?,?,?,?)";
+        jdbcTemplate.update(sql, new Object[] {account.getUsername(), account.getPassword(), users.size()+1, 0, users.size()+1});
+    }
 
 
 
