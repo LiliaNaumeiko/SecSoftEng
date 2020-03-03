@@ -49,11 +49,11 @@ public class ModuleController {
     @RequestMapping(value = "/grades" , method = RequestMethod.GET)
     @ResponseBody
     protected Object showGrades(Model model){
-        List<Student_has_module> gradesList = professorService.showGrades(1,4);
+        List<Student_has_module> gradesList = professorService.showGrades(1,2);
         model.addAttribute("gradesList", gradesList);
 
         //students.forEach((students1-> System.out.println(students.toString())));
-        return gradesList;
+        return gradesList.toArray();
     }
     @RequestMapping(value = "/topics" , method = RequestMethod.GET)
     @ResponseBody

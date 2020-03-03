@@ -26,20 +26,6 @@ public class LoginController {
         return "index";
     }
 
-    @RequestMapping(value = "/register/login", method = RequestMethod.POST)
-    public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
-                                @ModelAttribute("account")Account account, @RequestParam String name, @RequestParam String password) {
-        boolean isValidStudent = service.validateStudent(name, password);
-        if (!isValidStudent) {
-            service.registerAccount(account);
-            return new ModelAndView("login");
-        }
-
-        else {
-            return new ModelAndView("error", "firstname",account.getUsername());
-
-        }
-    }
 
     @RequestMapping(value="/login", method = RequestMethod.POST)
     public String showWelcomePage(ModelMap model, @RequestParam String name, @RequestParam String password){

@@ -7,10 +7,7 @@ import com.universitysys.SSE.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
 
@@ -23,18 +20,22 @@ public class RegisterController {
     @Autowired
     public RegisterService service;
 
+    @Autowired
+    public LoginService loginService;
     @RequestMapping(value = "/register", method = RequestMethod.GET )
     public ModelAndView showRegister(HttpServletRequest request, HttpServletResponse response) {
         ModelAndView mav = new ModelAndView("register");
         mav.addObject("students", new Students());
         return mav;
     }
+
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
-        @ModelAttribute("students") Students students) {
-        boolean isValidStudent = true;
+        @ModelAttribute("students") Students students,@ModelAttribute("account")Account account, @RequestParam String name, @RequestParam String password) {
+        boolean isValidStudent =loginService.validateStudent(name, password);
         if (!isValidStudent) {
             service.registerStudent(students);
+            loginService.registerAccount(account);
                     return new ModelAndView("login");
         }
 
