@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<title>Messages.html - Multi-Paged Website</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" type="text/css" th:href="@{/vendor/bootstrap/css/bootstrap.min1.css}" href="../static/vendor/bootstrap/css/bootstrap.min1.css">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/mainwelcome.css}" href="../static/css/mainwelcome.css">
+	</head>
+	<body>
+		<ul class="nav nav-tabs">
+			<li role="presentation"><a href="welcome.html" th:href="@{welcome.html}">Home</a></li>
+			<li role="presentation"><a href="mymodules.html"  th:href="@{mymodules.html}">My Modules</a></li>
+			<li role="presentation" class="active"><a href="statistics.html"  th:href="@{statistics.html}">Statistics</a></li>
+		</ul>
+	</body>
+</html>

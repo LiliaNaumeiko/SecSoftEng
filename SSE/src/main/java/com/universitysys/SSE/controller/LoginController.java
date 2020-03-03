@@ -23,7 +23,7 @@ public class LoginController {
 
     @RequestMapping(value="/login", method = RequestMethod.GET)
     public String showLoginPage(ModelMap model){
-        return "login";
+        return "index";
     }
 
     @RequestMapping(value = "/register/login", method = RequestMethod.POST)
@@ -47,13 +47,14 @@ public class LoginController {
         boolean isValidStudent = service.validateStudent(name, password);
 
         if (!isValidStudent) {
-            model.put("errorMessage", "Invalid Credentials");
-            return "login";
+            model.addAttribute("errorMessage", "Error: Invalid Credentials");
+            return "index";
         }
 
-        model.put("name", name);
-        model.put("password", password);
-
-        return "welcome";
+        else {
+            model.put("name", name);
+            model.put("password", password);
+            return "welcome";
+        }
     }
 }
