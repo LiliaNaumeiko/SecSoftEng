@@ -31,12 +31,12 @@ public class ModuleController {
 
     @RequestMapping(value = "/module" , method = RequestMethod.GET)
     @ResponseBody
-    protected Object getById(ModelMap model){
+    protected ModelAndView getById(ModelMap model){
         List<Module> moduleList = moduleService.showInfo();
         model.addAttribute("moduleList", moduleList);
         model.addAttribute("nameList", moduleList.toArray());
         //students.forEach((students1-> System.out.println(students.toString())));
-        return "allmodules";
+        return new ModelAndView("allmodules");
     }
     @RequestMapping(value = "/professor" , method = RequestMethod.GET)
     @ResponseBody

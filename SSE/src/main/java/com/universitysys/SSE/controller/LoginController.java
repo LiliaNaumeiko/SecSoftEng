@@ -22,7 +22,7 @@ public class LoginController {
     LoginService service;
 
     @RequestMapping(value="/login", method = RequestMethod.GET)
-    public String showLoginPage(ModelMap model){
+    public String showLoginPage( ){
         return "index";
     }
 

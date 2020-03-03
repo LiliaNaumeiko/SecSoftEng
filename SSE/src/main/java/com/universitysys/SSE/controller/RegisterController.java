@@ -21,13 +21,10 @@ public class RegisterController {
     public RegisterService service;
 
     @Autowired
+    public LoginController controller;
+
+    @Autowired
     public LoginService loginService;
-    @RequestMapping(value = "/register", method = RequestMethod.GET )
-    public ModelAndView showRegister(HttpServletRequest request, HttpServletResponse response) {
-        ModelAndView mav = new ModelAndView("register");
-        mav.addObject("students", new Students());
-        return mav;
-    }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
@@ -36,6 +33,7 @@ public class RegisterController {
         if (!isValidStudent) {
             service.registerStudent(students);
             loginService.registerAccount(account);
+            controller.showLoginPage();
                     return new ModelAndView("register");
         }
 
@@ -44,5 +42,10 @@ public class RegisterController {
 
         }
     }
+
+
+
+
+
 }
 

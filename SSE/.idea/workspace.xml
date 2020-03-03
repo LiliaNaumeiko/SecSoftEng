@@ -3,22 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="40b64cd5-ce19-435e-a515-5292544bc312" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/ModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/ModuleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/model/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/model/Students.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/ModuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/ModuleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/RegisterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/ModuleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/ModuleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/model/Students.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/model/Students.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/LoginService$UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/LoginService$UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/LoginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/ModuleService$UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/ModuleService$UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/RegisterService$UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/RegisterService$UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/RegisterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../html/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,38 +105,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="66" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583191952192" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583241842907">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1583247766945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583241842907" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583241842907">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1583247766944">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583241842907" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583241842907">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583247766944" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1583247766944">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583241842907" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583241842907">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583247766944" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1583247766944">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583241842907" />
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1583241842908">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583247766944" />
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom" timestamp="1583247766945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583241842908" />
-    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1583241842908">
+    <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
+    <state width="1323" height="179" key="GridCell.Tab.1.center" timestamp="1583247766945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583241842908" />
-    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1583241842907">
+    <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
+    <state width="1323" height="179" key="GridCell.Tab.1.left" timestamp="1583247766945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583241842907" />
-    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1583241842908">
+    <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right" timestamp="1583247766945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583241842908" />
+    <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1583062699042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -160,5 +153,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583068736691" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/js/global.js</url>
+          <line>28</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/RegisterController.java</url>
+          <line>29</line>
+          <properties class="com.universitysys.SSE.controller.RegisterController" method="addUser">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
