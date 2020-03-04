@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html prefix="c" xmlns:c="http://java.sun.com/jsp/jstl/core">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3" xmlns:c="http://java.sun.com/jsp/jstl/core">
 
 	<head>
 		<title>Messages.html - Multi-Paged Website</title>
@@ -23,10 +22,19 @@
 					<th>Title</th>
 
 				</tr>
-				<c:forEach var="module" items="${students}" varStatus="status">
+				<c:forEach var="module" items="${studentsList}">
 					<tr>
-						<td>@{module.username}</td>
-						<td><c:out value="${students.name}" /></td>
+						<td><%=module.username%></td>
+						<td><c:out value="${username}" /></td>
+						<script>
+							var num = [[${password}]]
+						</script>
+					</tr>
+					<tr th:each="message : ${messages}">
+						<td th:text="${message.username}"></td>
+					</tr>
+					<tr th:each="module: ${modules}">
+					<td th:text="${module.name}"></td>
 					</tr>
 				</c:forEach>
 			</table>

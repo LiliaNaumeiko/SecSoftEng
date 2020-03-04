@@ -2,103 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40b64cd5-ce19-435e-a515-5292544bc312" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SSE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SSE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/ModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/ModuleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/StatisticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/controller/StatisticController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/model/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/model/Students.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/RegisterService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/StatisticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/universitysys/SSE/service/StatisticService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mymodules.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mymodules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/ModuleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/ModuleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/StatisticController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/controller/StatisticController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/model/Students.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/model/Students.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/RegisterService$UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/RegisterService$UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/RegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/StatisticService$UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/StatisticService$UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/StatisticService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/universitysys/SSE/service/StatisticService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/mymodules.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/mymodules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/css/util.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/montserrat/Montserrat-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/montserrat/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/poppins/Poppins-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/poppins/Poppins-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/fonts/poppins/Poppins-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/images/img-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/animate/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/js/popper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/bootstrap/js/tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/css-hamburgers/hamburgers.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/select2/select2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/select2/select2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/select2/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/select2/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/vendor/tilt/tilt.jquery.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +89,7 @@
       <workItem from="1583068369135" duration="207000" />
       <workItem from="1583068736661" duration="18234000" />
       <workItem from="1583194800190" duration="11025000" />
-      <workItem from="1583256560330" duration="11119000" />
+      <workItem from="1583256560330" duration="18940000" />
     </task>
     <servers />
   </component>
@@ -201,46 +114,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="66" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583191952192" />
-    <state width="796" height="144" key="GridCell.Tab.0.bottom" timestamp="1583281098030">
+    <state width="796" height="144" key="GridCell.Tab.0.bottom" timestamp="1583318657572">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
-    <state width="796" height="144" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1583281098030" />
-    <state width="796" height="144" key="GridCell.Tab.0.center" timestamp="1583281098029">
+    <state width="796" height="144" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1583318657572" />
+    <state width="796" height="144" key="GridCell.Tab.0.center" timestamp="1583318657572">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583247766944" />
-    <state width="796" height="144" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1583281098029" />
-    <state width="796" height="144" key="GridCell.Tab.0.left" timestamp="1583281098016">
+    <state width="796" height="144" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1583318657572" />
+    <state width="796" height="144" key="GridCell.Tab.0.left" timestamp="1583318657571">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583247766944" />
-    <state width="796" height="144" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1583281098016" />
-    <state width="796" height="144" key="GridCell.Tab.0.right" timestamp="1583281098030">
+    <state width="796" height="144" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1583318657571" />
+    <state width="796" height="144" key="GridCell.Tab.0.right" timestamp="1583318657572">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583247766944" />
-    <state width="796" height="144" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1583281098030" />
-    <state width="796" height="144" key="GridCell.Tab.1.bottom" timestamp="1583281098032">
+    <state width="796" height="144" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1583318657572" />
+    <state width="796" height="144" key="GridCell.Tab.1.bottom" timestamp="1583318657574">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
-    <state width="796" height="144" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1583281098032" />
-    <state width="796" height="144" key="GridCell.Tab.1.center" timestamp="1583281098031">
+    <state width="796" height="144" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1583318657574" />
+    <state width="796" height="144" key="GridCell.Tab.1.center" timestamp="1583318657573">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
-    <state width="796" height="144" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1583281098031" />
-    <state width="796" height="144" key="GridCell.Tab.1.left" timestamp="1583281098031">
+    <state width="796" height="144" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1583318657573" />
+    <state width="796" height="144" key="GridCell.Tab.1.left" timestamp="1583318657573">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
-    <state width="796" height="144" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1583281098031" />
-    <state width="796" height="144" key="GridCell.Tab.1.right" timestamp="1583281098031">
+    <state width="796" height="144" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1583318657573" />
+    <state width="796" height="144" key="GridCell.Tab.1.right" timestamp="1583318657573">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583247766945" />
-    <state width="796" height="144" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1583281098031" />
+    <state width="796" height="144" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1583318657573" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1583062699042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

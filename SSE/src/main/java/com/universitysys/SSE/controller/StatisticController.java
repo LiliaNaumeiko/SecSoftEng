@@ -24,14 +24,15 @@ public class StatisticController {
     public StatisticService statisticService;
 
     @RequestMapping(value = "/statistic" , method = RequestMethod.GET)
-    @ResponseBody
-    public String getById(Model model){
-        List<Account> studentsList = statisticService.showInfo();
-        model.addAttribute("studentsList", studentsList);
-        //students.forEach((students1-> System.out.println(students.toString())));
-        return "mymodules";
-        }
-
+    public ModelAndView messages() {
+        ModelAndView mav = new ModelAndView("mymodules");
+        mav.addObject("messages",  statisticService.showInfo());
+        return mav;
+    }
+    @ModelAttribute("messages")
+    public List<Account> message() {
+        return statisticService.showInfo();
+    }
 
 
 }

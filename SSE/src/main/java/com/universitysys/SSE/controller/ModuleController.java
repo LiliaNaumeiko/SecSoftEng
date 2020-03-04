@@ -26,50 +26,19 @@ import java.util.List;
 public class ModuleController {
     @Autowired
     public ModuleService moduleService;
-    @Autowired
-    public ProfessorService professorService;
-    @Autowired
-    public TopicsService topicsService;
 
 
-    @RequestMapping(value = "/module" )
-        public ModelAndView  getById(ModelAndView model) throws IOException {
-        List<Module> moduleList = moduleService.showInfo();
-        model.addObject("moduleList", moduleList);
-        model.setViewName("mymodules");
-        //students.forEach((students1-> System.out.println(students.toString())));
-        return model;
+    @RequestMapping(value = "/modules" , method = RequestMethod.GET)
+    public ModelAndView modules() {
+        ModelAndView mod = new ModelAndView("mymodules");
+        mod.addObject("modules",  moduleService.showInfo());
+        return mod;
     }
-    @RequestMapping(value = "/professor" , method = RequestMethod.GET)
-    public Object showProfessor(Model model){
-        List<Professor> professorList = professorService.showAll();
-        model.addAttribute("professorList", professorList);
-
-        //students.forEach((students1-> System.out.println(students.toString())));
-        return professorList;
+    @ModelAttribute("modules")
+    public List<Module> module() {
+        return moduleService.showInfo();
     }
-    @RequestMapping(value = "/grades" , method = RequestMethod.GET)
-    public Object showGrades(Model model){
-        List<Student_has_module> gradesList = professorService.showGrades(1,2);
-        model.addAttribute("gradesList", gradesList);
 
-        //students.forEach((students1-> System.out.println(students.toString())));
-        return gradesList.toArray();
-    }
-    @RequestMapping(value = "/topics" , method = RequestMethod.GET)
-    public Object showTopics(Model model){
-        List<Topics> topicsList = topicsService.showAll();
-        model.addAttribute("topicsList", topicsList);
 
-        //students.forEach((students1-> System.out.println(students.toString())));
-        return topicsList;
-    }
-    //@RequestMapping(value = "/grades/edit", method = RequestMethod.POST)
-    //public ModelAndView addGrade(HttpServletRequest request, HttpServletResponse response,
-      //                          @ModelAttribute("grades")Student_has_module student_has_module, @RequestParam int grade) {
-
-      // professorService.inputGrades(student_has_module, grade);
-        //    return new ModelAndView("login");
-    //}
 
 }
