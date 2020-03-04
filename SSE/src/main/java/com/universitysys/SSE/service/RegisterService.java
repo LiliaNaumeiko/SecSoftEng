@@ -31,7 +31,7 @@ public class RegisterService {
             Students user = new Students();
             user.setNationality(rs.getString("nationality"));
             user.setSex(rs.getString("sex"));
-            user.setDate_of_birth(rs.getDate("date_of_birth"));
+            user.setDate_of_birth(rs.getString("date_of_birth"));
             user.setName(rs.getString("name"));
             user.setSurname(rs.getString("surname"));
             user.setId(rs.getInt("id"));

@@ -20,7 +20,12 @@ public class LoginController {
 
     @Autowired
     LoginService service;
-
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    public ModelAndView showRegister() {
+        ModelAndView mav = new ModelAndView("register");
+        mav.addObject("students", new Students());
+        return mav;
+    }
     @RequestMapping(value="/login", method = RequestMethod.GET)
     public String showLoginPage( ){
         return "index";

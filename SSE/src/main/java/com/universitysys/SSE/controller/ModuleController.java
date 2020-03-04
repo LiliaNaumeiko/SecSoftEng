@@ -8,6 +8,7 @@ import com.universitysys.SSE.service.ProfessorService;
 import com.universitysys.SSE.service.StatisticService;
 import com.universitysys.SSE.service.TopicsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -16,11 +17,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
-@RestController
+@Controller
 public class ModuleController {
     @Autowired
     public ModuleService moduleService;
@@ -29,18 +31,17 @@ public class ModuleController {
     @Autowired
     public TopicsService topicsService;
 
-    @RequestMapping(value = "/module" , method = RequestMethod.GET)
-    @ResponseBody
-    protected ModelAndView getById(ModelMap model){
+
+    @RequestMapping(value = "/module" )
+        public ModelAndView  getById(ModelAndView model) throws IOException {
         List<Module> moduleList = moduleService.showInfo();
-        model.addAttribute("moduleList", moduleList);
-        model.addAttribute("nameList", moduleList.toArray());
+        model.addObject("moduleList", moduleList);
+        model.setViewName("mymodules");
         //students.forEach((students1-> System.out.println(students.toString())));
-        return new ModelAndView("allmodules");
+        return model;
     }
     @RequestMapping(value = "/professor" , method = RequestMethod.GET)
-    @ResponseBody
-    protected Object showProfessor(Model model){
+    public Object showProfessor(Model model){
         List<Professor> professorList = professorService.showAll();
         model.addAttribute("professorList", professorList);
 
@@ -48,8 +49,7 @@ public class ModuleController {
         return professorList;
     }
     @RequestMapping(value = "/grades" , method = RequestMethod.GET)
-    @ResponseBody
-    protected Object showGrades(Model model){
+    public Object showGrades(Model model){
         List<Student_has_module> gradesList = professorService.showGrades(1,2);
         model.addAttribute("gradesList", gradesList);
 
@@ -57,8 +57,7 @@ public class ModuleController {
         return gradesList.toArray();
     }
     @RequestMapping(value = "/topics" , method = RequestMethod.GET)
-    @ResponseBody
-    protected Object showTopics(Model model){
+    public Object showTopics(Model model){
         List<Topics> topicsList = topicsService.showAll();
         model.addAttribute("topicsList", topicsList);
 

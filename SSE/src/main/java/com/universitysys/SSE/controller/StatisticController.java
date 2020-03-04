@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 @Controller
@@ -24,11 +25,11 @@ public class StatisticController {
 
     @RequestMapping(value = "/statistic" , method = RequestMethod.GET)
     @ResponseBody
-    public List<Account> getById(Model model){
+    public String getById(Model model){
         List<Account> studentsList = statisticService.showInfo();
         model.addAttribute("studentsList", studentsList);
         //students.forEach((students1-> System.out.println(students.toString())));
-        return studentsList;
+        return "mymodules";
         }
 
 

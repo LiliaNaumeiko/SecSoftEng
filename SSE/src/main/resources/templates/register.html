@@ -66,6 +66,7 @@ xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                                     <input class="input--style-4" type="text" name="nationality">
                                 </div>
                             </div>
+                        </div>
                         <div class="col-2">
                             <div class="input-group">
                                 <label class="label">Username</label>
@@ -79,7 +80,7 @@ xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
                             </div>
                         </div>
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" th:href="@{index.html}" href="index.html" type="submit">Submit</button>
+                            <a class="btn btn--radius-2 btn--blue" th:href="@{index.html}" href="index.html" type="submit"><a href="/login" >Submit</a></button>
                         </div>
                     </form>
                 </div>

@@ -23,7 +23,7 @@ public class Students {
     @NotBlank
     private String surname;
     @NotBlank
-    public Date date_of_birth;
+    public String date_of_birth;
     @NotBlank
     public String nationality;
     @NotBlank
@@ -61,9 +61,9 @@ public class Students {
     public void setSurname(String surname) {
             this.surname = surname;
     }
-    public Date getDate_of_birth() {return date_of_birth;}
+    public String getDate_of_birth() {return date_of_birth;}
 
-    public void setDate_of_birth(Date date_of_birth) {this.date_of_birth = date_of_birth;}
+    public void setDate_of_birth(String date_of_birth) {this.date_of_birth = date_of_birth;}
 
     public String getNationality(){return nationality;}
 
