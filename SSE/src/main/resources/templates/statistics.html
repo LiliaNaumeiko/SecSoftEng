@@ -6,16 +6,39 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" type="text/css" th:href="@{/vendor/bootstrap/css/bootstrap.min1.css}" href="../static/vendor/bootstrap/css/bootstrap.min1.css">
 		<link rel="stylesheet" type="text/css" th:href="@{/css/mainwelcome.css}" href="../static/css/mainwelcome.css">
+		<script src="https://cdn.jsdelivr.net/npm/vega@5.9.0" th:src="@{https://cdn.jsdelivr.net/npm/vega@5.9.0}"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.0.2" th:src="@{https://cdn.jsdelivr.net/npm/vega-lite@4.0.2}"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.2.1" th:src="@{https://cdn.jsdelivr.net/npm/vega-embed@6.2.1}"></script>
+
+		<script src="/js/save.js" th:src="@{/js/save.js}"> </script>
 	</head>
 	<body>
 		<ul class="nav nav-tabs">
-			<li role="presentation"><a href="welcome.html" th:href="@{welcome.html}">Home</a></li>
-			<li role="presentation"><a href="mymodules.html"  th:href="@{mymodules.html}">My Modules</a></li>
-			<li role="presentation" class="active"><a href="statistics.html"  th:href="@{statistics.html}">Statistics</a></li>
+			<li role="presentation"><a href="/welcome" th:href="@{/welcome}">Home</a></li>
+			<li role="presentation"><a href="/allmodules"  th:href="@{/allmodules}">All Modules</a></li>
+			<li role="presentation"><a href="/mymodules"  th:href="@{/mymodules}">My Modules</a></li>
+			<li role="presentation" class="active"><a href="/statistics"  th:href="@{/statistics}">Statistics</a></li>
+			<li role="presentation" ><a href="/payment"  th:href="@{/payment}">My Payments</a></li>
 		</ul>
-
-		<tr th:each="message: ${messages}">
-			<td th:text="${message.name}"></td>
-		</tr>
+		<table border="1" cellpadding="5" id="tblData">
+			<caption><h2>Statistics</h2></caption>
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Surname</th>
+				<th>Sex</th>
+				<th>Nationality</th>
+				<th>Date of birth</th>
+			</tr>
+			</thead>
+			<tr th:each="message: ${messages}">
+				<td th:text="${message.name}"></td>
+				<td th:text="${message.surname}"></td>
+				<td th:text="${message.sex}"></td>
+				<td th:text="${message.nationality}"></td>
+				<td th:text="${message.date_of_birth}"></td>
+			</tr>
+		</table>
+		<button onclick="exportTableToExcel('tblData', 'members-data')">Export Table Data To Excel File</button>
 	</body>
 </html>

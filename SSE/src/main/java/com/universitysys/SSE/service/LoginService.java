@@ -47,11 +47,11 @@ public class LoginService {
         String sql = "insert into account values(?,?,?,?,?)";
         jdbcTemplate.update(sql, new Object[] {account.getUsername(), account.getPassword(), users.size()+1, 0, users.size()+1});
     }
-    public void payAccount(Account account, int id){
-        String sql = "update account set `fees`=? where `id`="+id +";";
+
+    public void payAccount(Account account){
+        String sql = "update account set `fees`=1 where `id`="+account.getId() +";";
         jdbcTemplate.update(sql, new Object[] {account.getUsername()});
     }
-
 
 
 

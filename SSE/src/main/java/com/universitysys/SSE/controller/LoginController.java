@@ -26,13 +26,21 @@ public class LoginController {
         mav.addObject("students", new Students());
         return mav;
     }
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    public ModelAndView showWelcome() {
+        return new ModelAndView("welcome");
+    }
     @RequestMapping(value = "/payment", method = RequestMethod.POST)
     public ModelAndView addPayment(HttpServletRequest request, HttpServletResponse response,
-                                @ModelAttribute("account")Account account, @RequestParam Boolean fees, @RequestParam int id) {
+                                   @ModelAttribute("account")Account account) {
 
-            service.payAccount(account, id);
-            return new ModelAndView("payment");
+        service.payAccount(account);
+        return new ModelAndView("mymodules");
 
+    }
+    @RequestMapping(value="/payment", method = RequestMethod.GET)
+    public String showPayment( ){
+        return "payments";
     }
     @RequestMapping(value="/login", method = RequestMethod.GET)
     public String showLoginPage( ){

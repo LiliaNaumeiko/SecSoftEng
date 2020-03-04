@@ -34,11 +34,21 @@ public class ModuleController {
         mod.addObject("modules",  moduleService.showInfo());
         return mod;
     }
+    @RequestMapping(value = "allmodules" , method = RequestMethod.GET)
+    public ModelAndView allmodules() {
+        ModelAndView mod = new ModelAndView("allmodules");
+        mod.addObject("modules",  moduleService.showInfo());
+        return mod;
+    }
     @ModelAttribute("modules")
     public List<Module> module() {
         return moduleService.showInfo();
     }
 
+    @ModelAttribute("allmodules")
+    public List<Module> allmodule() {
+        return moduleService.showInfo();
+    }
 
 
 }

@@ -10,9 +10,11 @@
 	</head>
 	<body>
 		<ul class="nav nav-tabs">
-			<li role="presentation" ><a href="/module"> <a th:href="@{welcome.html}">Home</a></li>
-			<li role="presentation" class="active"><a href="mymodules.html"  th:href="@{mymodules.html}">My Modules</a></li>
-			<li role="presentation"><a href="statistics.html"  th:href="@{statistics.html}">Statistics</a></li>
+			<li role="presentation" ><a href="/welcome" th:href="@{/welcome}">Home</a></li>
+			<li role="presentation" ><a href="/allmodules"  th:href="@{/allmodules}">All Modules</a></li>
+			<li role="presentation" class="active"><a href="/mymodules"  th:href="@{/mymodules}">My Modules</a></li>
+			<li role="presentation"><a href="/statistics"  th:href="@{/statistics}">Statistics</a></li>
+			<li role="presentation" ><a href="/payment"  th:href="@{/payment}">My Payments</a></li>
 		</ul>
 		<div align="center">
 			<table border="1" cellpadding="5">

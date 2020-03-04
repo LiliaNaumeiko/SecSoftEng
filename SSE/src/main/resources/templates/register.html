@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
 <head>
     <!-- Required meta tags-->
@@ -24,80 +24,82 @@ xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 </head>
 
 <body>
-    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-4">
-                <div class="card-body">
-                    <h2 class="title">Registration Form</h2>
-                    <form method="POST">
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">First name</label>
-                                    <input class="input--style-4" type="text" name="name">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Last name</label>
-                                    <input class="input--style-4" type="text" name="surname">
-                                </div>
+<div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-4">
+            <div class="card-body">
+                <h2 class="title">Registration Form</h2>
+                <script src="/js/valid.js" th:src="@{/js/valid.js}"> </script>
+                <form method="POST" onsubmit="return checkForm(this);">
+                    <div class="row row-space">
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">First name</label>
+                                <input class="input--style-4" type="text" name="name" required>
                             </div>
                         </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Birthday</label>
-                                    <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="date_of_birth">
-                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                    </div>
-                                </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">Last name</label>
+                                <input class="input--style-4" type="text" name="surname" required>
                             </div>
-                                <div class="col-2">
-                                    <div class="input-group">
-                                        <label class="label">Sex</label>
-                                        <input class="input--style-4" type="text" Placeholder="male/female" name="sex">
-                                    </div>
-                                </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Nationality</label>
-                                    <input class="input--style-4" type="text" name="nationality">
+                        </div>
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">Birthday</label>
+                                <div class="input-group-icon">
+                                    <input class="input--style-4 js-datepicker" type="text" name="date_of_birth" required>
+                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="input-group">
-                                <label class="label">Username</label>
-                                <input class="input--style-4" type="text" name="username">
+                                <label class="label">Sex</label>
+                                <input class="input--style-4" type="text" Placeholder="male/female" name="sex" required>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="input-group">
-                                <label class="label">Password</label>
-                                <input class="input--style-4" type="password" name="password" required>
+                                <label class="label">Nationality</label>
+                                <input class="input--style-4" type="text" name="nationality" required>
                             </div>
                         </div>
-                        <div class="p-t-15">
-                            <a class="btn btn--radius-2 btn--blue" th:href="@{index.html}" href="index.html" type="submit"><a href="/login" >Submit</a></button>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="label">Username</label>
+                            <input class="input--style-4" type="text" name="username" required>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="input-group">
+                            <label class="label">Password</label>
+                            <input class="input--style-4" type="password" name="password" required>
+                        </div>
+                    </div>
+                    <div class="p-t-15">
+                        <button class="btn btn--radius-2 btn--blue" type="submit">
+                            Submit
+                        </button>
+                        <a href="/login">Login</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2r.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
+<!-- Jquery JS-->
+<script src="/vendor/jquery/jquery.min.js" th:src="@{/vendor/jquery/jquery-3.2.1.min.js}"></script>
+<!-- Vendor JS-->
+<script src="/vendor/select2/select2r.min.js" th:src="@{/vendor/select2/select2r.min.js}"></script>
+<script src="/vendor/datepicker/moment.min.js" th:src="@{/vendor/datepicker/moment.min.js}"></script>
+<script src="/vendor/datepicker/daterangepicker.js" th:src="@{/vendor/datepicker/daterangepicker.js}"></script>
 
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
-
+<script src="/js/global.js" th:src="@{/js/global.js}"> </script>
 </body>
 
 </html>
