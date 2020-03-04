@@ -18,11 +18,7 @@ public class ProfessorService {
     JdbcTemplate jdbcTemplate;
 
 
-    public void inputGrades( Student_has_module student_has_module, int student_id ,int module_id){
-        String sql = "update student_has_module set (?) where `student_id`='" +student_id  +"'and `module_id`='"+ module_id+"';";
-        jdbcTemplate.update(sql, new Object[] {student_has_module.getGrade()});
 
-    }
     public List<Student_has_module> showGrades( int student_id,int module_id){
         String sql = "select * from student_has_module where `student_id`='" +student_id  +"'and `module_id`='"+ module_id+"';";
         List<Student_has_module> users = jdbcTemplate.query(sql,new GradeMapper());
@@ -38,7 +34,6 @@ public class ProfessorService {
     class ProfessorMapper implements RowMapper<Professor> {
         public Professor mapRow(ResultSet rs, int arg1) throws SQLException {
             Professor user = new Professor();
-            user.setDepartment( rs.getString("department"));
             user.setName(rs.getString("name"));
             user.setSurname(rs.getString("surname"));
             user.setId(rs.getInt("id"));

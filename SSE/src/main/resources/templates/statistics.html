@@ -13,5 +13,9 @@
 			<li role="presentation"><a href="mymodules.html"  th:href="@{mymodules.html}">My Modules</a></li>
 			<li role="presentation" class="active"><a href="statistics.html"  th:href="@{statistics.html}">Statistics</a></li>
 		</ul>
+
+		<tr th:each="message: ${messages}">
+			<td th:text="${message.name}"></td>
+		</tr>
 	</body>
 </html>

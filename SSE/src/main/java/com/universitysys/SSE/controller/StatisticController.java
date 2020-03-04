@@ -23,14 +23,14 @@ public class StatisticController {
     @Autowired
     public StatisticService statisticService;
 
-    @RequestMapping(value = "/statistic" , method = RequestMethod.GET)
+    @RequestMapping(value = "/statistics" , method = RequestMethod.GET)
     public ModelAndView messages() {
-        ModelAndView mav = new ModelAndView("mymodules");
+        ModelAndView mav = new ModelAndView("statistics");
         mav.addObject("messages",  statisticService.showInfo());
         return mav;
     }
     @ModelAttribute("messages")
-    public List<Account> message() {
+    public List<Students> message() {
         return statisticService.showInfo();
     }
 

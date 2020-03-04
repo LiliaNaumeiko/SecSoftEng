@@ -18,25 +18,15 @@
 			<table border="1" cellpadding="5">
 				<caption><h2>List of Books</h2></caption>
 				<tr>
-					<th>ID</th>
 					<th>Title</th>
+					<th>Maxplace</th>
 
 				</tr>
-				<c:forEach var="module" items="${studentsList}">
-					<tr>
-						<td><%=module.username%></td>
-						<td><c:out value="${username}" /></td>
-						<script>
-							var num = [[${password}]]
-						</script>
-					</tr>
-					<tr th:each="message : ${messages}">
-						<td th:text="${message.username}"></td>
-					</tr>
-					<tr th:each="module: ${modules}">
+				<tr th:each="module: ${modules}">
 					<td th:text="${module.name}"></td>
-					</tr>
-				</c:forEach>
+					<td th:text="${module.maxplace}"></td>
+				</tr>
+
 			</table>
 		</div>
 	</body>

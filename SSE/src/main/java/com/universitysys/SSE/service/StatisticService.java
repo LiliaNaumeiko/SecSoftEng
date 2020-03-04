@@ -19,23 +19,28 @@ public class StatisticService {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    public Account getOne(int id){
-        String sql ="select * from account where id=?;";
-        return jdbcTemplate.queryForObject(sql, new Object[]{id}, new BeanPropertyRowMapper<Account>(Account.class));
+    public List<Students> getOne(int id){
+        String sql ="select * from student where id=?;";
+        List<Students> users = jdbcTemplate.query(sql,new UserMapper());
+        return users;
     }
-    public List<Account> showInfo(){
-        String sql1 = "select * from account";
-        List<Account> users = jdbcTemplate.query(sql1,new UserMapper());
+    public List<Students> showInfo(){
+        String sql1 = "select * from student";
+        List<Students> users = jdbcTemplate.query(sql1,new UserMapper());
         return users;
         }
 
 
 
-    class UserMapper implements RowMapper<Account> {
-        public Account  mapRow(ResultSet rs, int arg1) throws SQLException {
-            Account user = new Account();
-            user.setUsername(rs.getString("username"));
-            user.setPassword(rs.getString("password"));
+    class UserMapper implements RowMapper<Students> {
+        public Students  mapRow(ResultSet rs, int arg1) throws SQLException {
+            Students user = new Students();
+            user.setName(rs.getString("name"));
+            user.setSurname(rs.getString("surname"));
+            user.setDate_of_birth(rs.getString("date_of_birth"));
+            user.setSex(rs.getString("sex"));
+            user.setNationality(rs.getString("nationality"));
+            user.setId(rs.getInt("id"));
             return user;
         }
     }

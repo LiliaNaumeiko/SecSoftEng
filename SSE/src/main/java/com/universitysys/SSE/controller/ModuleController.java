@@ -28,7 +28,7 @@ public class ModuleController {
     public ModuleService moduleService;
 
 
-    @RequestMapping(value = "/modules" , method = RequestMethod.GET)
+    @RequestMapping(value = "mymodules" , method = RequestMethod.GET)
     public ModelAndView modules() {
         ModelAndView mod = new ModelAndView("mymodules");
         mod.addObject("modules",  moduleService.showInfo());

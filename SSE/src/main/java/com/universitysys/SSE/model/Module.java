@@ -22,11 +22,10 @@ public class Module {
     @NotBlank
     public int professor_id;
     @NotBlank
-    public int maxplace;
+    public int max_places;
     @NotBlank
     public int enrolled_stud;
-    @NotBlank
-    public String school;
+
 
     public Module() {
 
@@ -43,7 +42,7 @@ public class Module {
     }
 
     public int getMaxplace() {
-        return maxplace;
+        return max_places;
     }
 
     public int getProfessor_id() {
@@ -62,9 +61,6 @@ public class Module {
         return name;
     }
 
-    public String getSchool() {
-        return school;
-    }
 
     public void setCredit(String credit) {
         this.credit = credit;
@@ -78,8 +74,8 @@ public class Module {
         this.id = id;
     }
 
-    public void setMaxplace(int maxplace) {
-        this.maxplace = maxplace;
+    public void setMaxplace(int max_places) {
+        this.max_places = max_places;
     }
 
     public void setName(String name) {
@@ -90,7 +86,4 @@ public class Module {
         this.professor_id = professor_id;
     }
 
-    public void setSchool(String school) {
-        this.school = school;
-    }
-}
+     }

@@ -9,15 +9,11 @@ public class Professor {
     private int id;
     private String name;
     private String surname;
-    private String department;
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
-    }
 
     public void setId(int id) {
         this.id = id;
@@ -31,9 +27,7 @@ public class Professor {
         return name;
     }
 
-    public String getDepartment() {
-        return department;
-    }
+
 
     public int getId() {
         return id;

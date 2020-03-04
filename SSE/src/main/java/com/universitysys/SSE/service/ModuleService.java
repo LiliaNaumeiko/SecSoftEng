@@ -31,7 +31,8 @@ public class ModuleService {
             user.setName(rs.getString("name"));
             user.setCredit(rs.getString("credit"));
             user.setEnrolled_stud(rs.getInt("enrolled_stud"));
-            user.setMaxplace(rs.getInt("maxplace"));
+            user.setMaxplace(rs.getInt("max_places"));
+            user.setId(rs.getInt("id"));
             return user;
         }
     }
