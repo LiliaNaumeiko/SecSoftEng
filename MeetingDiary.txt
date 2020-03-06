@@ -38,6 +38,16 @@ Meeting: 4
 Date:23.02
 Group leader: Olya
 
-Task and roles: As we understood how to work with spring boot our next step was to read requirement for projects and start to work. WE created database 
-and started to create project. 
+Task and roles: As we understood how to work with spring boot our next step was to read requirement for projects and start to work. We created database 
+and started to create project. Task for the next: create te first page login(back-end and front-end).
 Deadline: 26.02
+
+Meeting: 5 
+Date:28.02
+Group leader: Liliia
+
+Task and roles: We separated our roles in the project. 
+As we have only two people in our group, we decided that Olya should be responsible for front-end and Liliia should be responsible for back-end.
+We will work together through Git hub and collaborate with each other to achieve success.
+We created first page login. When somebody inputs his credentials, the checking with Data base is occured and then there are two possible variants: track User to "Welcome" page or alert an "error".
+Task for the next meeting: create other working pages of the webapp as /welcome /register, /mymodules, /allmodules, /mypayments and /statistics.
